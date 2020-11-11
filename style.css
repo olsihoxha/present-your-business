@@ -1,0 +1,106 @@
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        }
+
+        .bckg{
+            position: absolute;
+            background-color: #F4EAEA;
+            opacity: 0.3;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+        }
+        .desc{
+            text-align: center;
+            overflow: hidden; /* Ensures the content is not revealed until the animation */
+            white-space: nowrap; /* Keeps the content on a single line */
+            margin: 20px auto; /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+            }
+
+/* The typing effect */
+            @keyframes typing {
+                from { width: 0 }
+                to { width: 100% }
+                    }
+
+/* The typewriter cursor effect */
+                @keyframes blink-caret {
+                 from, to { border-color: transparent }
+                    50% { border-color: orange; }
+                    }
+        
+        .title-content{
+            background: #cc2b5e;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #753a88, #cc2b5e);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #753a88, #cc2b5e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+            border-radius: 35px; 
+            padding: 8px;
+            text-align: center;
+        }
+
+        .content-t{
+            z-index: 2;
+            margin-top: 200px;
+        }
+        .btn-cont{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+             
+        }
+        .button{
+            text-decoration: none;
+            color: white;
+            border: 2px solid white;
+            padding: 5px;
+            text-shadow: 0 0 1px rgb(218, 200, 122);
+            border-radius: 20px;
+           
+        }
+        .button:hover{
+            background-color: #F4EAEA;
+            color: black;
+        }
+        .tab{
+            position: absolute;
+            top: 20px;
+            right: 70px;
+        }
+        li{
+            display: inline;
+            margin:10px 10px;
+        }
+        a.tab-up{
+            text-decoration: none;
+            font-size:23px;
+            color:white;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        a.tab-up:hover{
+         border-bottom:2px solid pink;
+         color: pink;
+        }
+ 
